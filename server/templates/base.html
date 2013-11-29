@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock %}</title>
+
+    {% if config.get('DEBUG') %}
+        <script src="http://localhost:35729/livereload.js"></script>
+    {% endif %}
+
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    {% block javascript %}
+    {% endblock javascript %}
+
+  </head>
+  <body>
+    <div class="page-wrapper">
+      {% block content %}{% endblock content %}
+    </div>
+    <footer>
+      <ul class="footer-center">
+        <li>
+          Footer text goes here.
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
+

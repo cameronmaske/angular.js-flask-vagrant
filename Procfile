@@ -1,0 +1,1 @@
+web: gunicorn -k gevent -w 8 server.web:app

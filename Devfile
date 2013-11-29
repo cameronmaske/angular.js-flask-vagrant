@@ -1,0 +1,2 @@
+web: foreman run python server/web.py
+grunt: grunt watch
